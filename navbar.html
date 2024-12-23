@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/6648a724a0.js" crossorigin="anonymous"></script>
+  <title>NavBar</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header  class="bg-gray-800 opacity-95">
+     <div class="px-10">
+        <div class="flex  flex-col items-center sm:flex-row justify-between">
+            <div class="text-sm flex items-center space-x-2">
+                <i class="fa-solid fa-phone text-white"></i>
+                <p class="text-white">+91 9098-198-198</p>
+            </div>
+            <div> 
+                <i class="fa-brands fa-facebook text-white px-1"></i>
+                <i class="fa-brands fa-instagram text-white px-1"></i>
+                <i class="fa-brands fa-twitter text-white px-1"></i>
+                <i class="fa-brands fa-linkedin text-white px-1"></i>
+            </div>
+        </div>
+     </div>
+     <div class="bg-gradient-to-r px-10 flex flex-col from-black via-purple-900 to-black text-white font-sans">
+        <div class="flex items-center justify-between px-6 py-4">
+            <div class="flex items-center space-x-6">
+      
+              <img src="library-Management\WhatsApp Image 2024-12-22 at 16.04.47_waifu2x_art_scan_noise3.png" alt="Codelancer Logo" class="w-32">
+            </div>
+      
+            <!-- Hamburger Menu for Mobile -->
+            <button id="menu-toggle" class="lg:hidden text-2xl focus:outline-none">
+              <i class="fas fa-bars"></i>
+            </button>
+      
+            <!-- Navigation Links (Desktop) -->
+            <nav id="nav-menu" class="hidden flex lg:flex items-center space-x-6">
+              <a href="#" class="hover:text-gray-300">Home</a>
+              <a href="#" class="hover:text-gray-300">Flash By CCSF</a>
+              <a href="#" class="hover:text-gray-300">Services</a>
+              <a href="#" class="hover:text-gray-300">Packages</a>
+              <a href="#" class="hover:text-gray-300">Blogs</a>
+              <a href="#" class="hover:text-gray-300">Team</a>
+              <div class="relative group">
+                <a href="#" class="hover:text-gray-300">More <i class="fas fa-chevron-down"></i></a>
+                <div class="absolute hidden group-hover:block bg-gray-800 text-sm rounded-lg mt-2">
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700">Option 1</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700">Option 2</a>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-700">Option 3</a>
+                </div>
+              </div>
+            </nav>
+      
+            <div class="hidden lg:flex items-center space-x-4">
+              <button class="bg-red-600 text-white px-4 py-2  hover:bg-red-700">Get a Quote</button>
+              
+            </div>
+          </div>
+
+          <div id="mobile-menu" class="hidden flex-col bg-gray-900 text-white space-y-2 px-6 py-4 lg:hidden">
+            <a href="#" class="block hover:text-gray-300">Home</a>
+            <a href="#" class="block hover:text-gray-300">Flash By CCSF</a>
+            <a href="#" class="block hover:text-gray-300">Services</a>
+            <a href="#" class="block hover:text-gray-300">Packages</a>
+            <a href="#" class="block hover:text-gray-300">Blogs</a>
+            <a href="#" class="block hover:text-gray-300">Team</a>
+            <div>
+              <a href="#" class="block hover:text-gray-300">More</a>
+              <div class="ml-4 space-y-2">
+                <a href="#" class="block hover:text-gray-300">Option 1</a>
+                <a href="#" class="block hover:text-gray-300">Option 2</a>
+                <a href="#" class="block hover:text-gray-300">Option 3</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 mt-4">
+              <a href="#" class="hover:text-gray-300"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="hover:text-gray-300"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="hover:text-gray-300"><i class="fab fa-twitter"></i></a>
+            </div>
+            <button class="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 w-full mt-4">Get a Quote</button>
+          </div>
+     </div>
+    
+  </header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-O5CDEQcTAvkOHMe8FdnZh1d9kx2kcl/gm8EByE/Pc5BX/UUK97QlwDqXY0y4phQdksDhtJ3K/xTNNyzlj5PB6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
